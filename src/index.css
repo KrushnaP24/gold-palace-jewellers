@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Luxury gold shimmer text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #eedc8a 0%, #d4af37 50%, #aa8420 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle luxury peacock gradient */
+.bg-peacock-gradient {
+  background: linear-gradient(145deg, #072428 0%, #0b343a 50%, #031417 100%);
+}
+
+.bg-peacock-card {
+  background: radial-gradient(circle at top right, rgba(43, 156, 174, 0.08), transparent 70%),
+              linear-gradient(180deg, #072428 0%, #031417 100%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #072428;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b7d8d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
